@@ -4,7 +4,7 @@
 
 **Track:** Skin AI (combined with Makeup VTO)
 **Built with:** YouCam AI API v2 (Skin Analysis, Skin Tone Analysis, Makeup Virtual Try-On), Python, FastAPI, httpx, Pillow, Groq (gpt-oss-120b, OpenAI-compatible tool calling), vanilla HTML/CSS/JS, Docker, Render
-**Links:** Repo: https://github.com/abidhussain19932-stack/skinsync · Live demo: https://skinsync-l2iu.onrender.com · Video: `<YOUTUBE_URL>`
+**Links:** Repo: https://github.com/abidhussain19932-stack/skinsync · Live demo: https://skinsync-l2iu.onrender.com · Video: https://youtu.be/e5c_rb_vHUw
 
 ---
 
