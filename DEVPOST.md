@@ -4,7 +4,7 @@
 
 **Track:** Skin AI (combined with Makeup VTO)
 **Built with:** YouCam AI API v2 (Skin Analysis, Skin Tone Analysis, Makeup Virtual Try-On), Python, FastAPI, httpx, Pillow, Groq (gpt-oss-120b, OpenAI-compatible tool calling), vanilla HTML/CSS/JS, Docker, Render
-**Links:** Repo: `<GITHUB_URL>` · Live demo: `<RENDER_URL>` · Video: `<YOUTUBE_URL>`
+**Links:** Repo: https://github.com/abidhussain19932-stack/skinsync · Live demo: https://skinsync-l2iu.onrender.com · Video: `<YOUTUBE_URL>`
 
 ---
 
@@ -64,6 +64,7 @@ Most skincare purchases happen at one moment: in front of a shelf (or a search p
 4. `screenshots/04-routine.png`: AM/PM routine with add-to-bag
 5. `screenshots/05-agent-trace.png`: refine box and agent/YouCam trace
 6. `screenshots/06-mobile.png`: mobile layout
+7. `screenshots/07-live-youcam-vto.png`: live YouCam makeup-vto output (before/after)
 
 ---
 
