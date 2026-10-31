@@ -10,7 +10,7 @@ services:
       - key: YOUCAM_API_KEY
         sync: false
       - key: YOUCAM_BASE_URL
-        value: https://yce-api-01.makeupar.com
+        value: https://yce-api-01.perfectcorp.com
       # DEMO_MODE defaults to on when YOUCAM_API_KEY is empty, off when it is set.
       - key: LLM_API_KEY
         sync: false

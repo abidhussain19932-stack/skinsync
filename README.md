@@ -42,7 +42,7 @@ FastAPI (app/main.py)
 
 ## YouCam API usage (v2)
 
-Base URL: `https://yce-api-01.makeupar.com` (set with `YOUCAM_BASE_URL`). Auth: `Authorization: Bearer <YOUCAM_API_KEY>`. v2 has no separate auth call.
+Base URL: `https://yce-api-01.perfectcorp.com` (set with `YOUCAM_BASE_URL`). Auth: `Authorization: Bearer <YOUCAM_API_KEY>`. v2 has no separate auth call.
 
 Every feature uses the same four steps:
 
@@ -92,8 +92,8 @@ The tests cover the full demo flow (analyze, plan, try-on, images), upload valid
 
 | Var | Default | Purpose |
 |---|---|---|
-| `YOUCAM_API_KEY` | — | YouCam v2 API key ([console](https://yce.makeupar.com/api-console/en/api-keys/)) |
-| `YOUCAM_BASE_URL` | `https://yce-api-01.makeupar.com` | API host |
+| `YOUCAM_API_KEY` | — | YouCam v2 API key ([console](https://yce.perfectcorp.com/api-console/en/api-keys/)) |
+| `YOUCAM_BASE_URL` | `https://yce-api-01.perfectcorp.com` | API host |
 | `DEMO_MODE` | on if no key | Canned YouCam responses |
 | `LLM_API_KEY` / `LLM_BASE_URL` / `LLM_MODEL` | Groq / `openai/gpt-oss-120b` | Agent LLM |
 | `LLM_ENABLED` | `true` | `false` forces the rule planner |

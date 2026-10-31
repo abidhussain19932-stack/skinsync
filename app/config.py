@@ -24,7 +24,7 @@ class Settings:
     # YouCam (Perfect Corp) AI API v2 — Bearer auth with the API key.
     youcam_api_key: str = field(default_factory=lambda: os.getenv("YOUCAM_API_KEY", ""))
     youcam_base_url: str = field(
-        default_factory=lambda: os.getenv("YOUCAM_BASE_URL", "https://yce-api-01.makeupar.com").rstrip("/")
+        default_factory=lambda: os.getenv("YOUCAM_BASE_URL", "https://yce-api-01.perfectcorp.com").rstrip("/")
     )
     youcam_poll_interval: float = field(default_factory=lambda: float(os.getenv("YOUCAM_POLL_INTERVAL", "2")))
     youcam_timeout: float = field(default_factory=lambda: float(os.getenv("YOUCAM_TIMEOUT", "120")))
