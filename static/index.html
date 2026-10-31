@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>SkinSync — AI skin coach & virtual try-on</title>
+<meta name="description" content="Selfie in, routine out. YouCam AI Skin Analysis + an AI shopping agent + virtual makeup try-on." />
+<link rel="icon" href="/static/img/favicon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="/static/fonts/fonts.css" />
+<link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="/"><span class="dot"></span>SkinSync</a>
+  <div class="top-right">
+    <span id="modeBadge" class="badge">…</span>
+    <button id="bagBtn" class="bag-btn" aria-label="Open bag">Bag <span id="bagCount">0</span></button>
+  </div>
+</header>
+
+<main>
+  <!-- STEP 1: hero + upload -->
+  <section id="start" class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">YouCam AI Skin Analysis · AI agent · Virtual try-on</p>
+      <h1>Your skin, decoded.<br/><em>Your routine, delivered.</em></h1>
+      <p class="lede">Take one selfie. SkinSync scores 14 skin concerns with YouCam AI, an AI agent turns the numbers into a plain-English AM/PM routine from the shop, matches your foundation shade, and lets you try the look on before you buy.</p>
+      <ul class="trust">
+        <li>14 concerns scored</li><li>Shade-matched base</li><li>Try before you buy</li>
+      </ul>
+    </div>
+
+    <div class="card upload-card">
+      <label id="drop" class="drop" for="fileInput">
+        <img id="preview" alt="" hidden />
+        <div id="dropHint" class="drop-hint">
+          <div class="cam">◎</div>
+          <strong>Upload or take a selfie</strong>
+          <span>Front-facing, bare face, good light · JPG/PNG</span>
+        </div>
+        <input id="fileInput" type="file" accept="image/jpeg,image/png" capture="user" hidden />
+      </label>
+      <button id="sampleBtn" class="link-btn" type="button">No selfie handy? Use the sample photo →</button>
+
+      <div class="prefs">
+        <div class="pref-row">
+          <label for="budget">Routine budget</label>
+          <output id="budgetOut">$90</output>
+        </div>
+        <input id="budget" type="range" min="40" max="200" step="10" value="90" />
+        <div class="chips" id="goals">
+          <button type="button" class="chip" data-goal="clear breakouts">Clear breakouts</button>
+          <button type="button" class="chip" data-goal="calm redness">Calm redness</button>
+          <button type="button" class="chip" data-goal="glow">Get a glow</button>
+          <button type="button" class="chip" data-goal="anti-aging">Anti-aging</button>
+        </div>
+        <div class="toggles">
+          <label><input type="checkbox" id="sensitive" /> Sensitive skin</label>
+          <label><input type="checkbox" id="ffree" checked /> Fragrance-free only</label>
+        </div>
+      </div>
+      <button id="analyzeBtn" class="primary" type="button" disabled>Analyze my skin</button>
+      <p class="fine">Photos are processed in memory and never stored. Not medical advice.</p>
+    </div>
+  </section>
+
+  <!-- progress -->
+  <section id="progress" class="progress" hidden>
+    <ol>
+      <li data-step="upload">Preparing photo</li>
+      <li data-step="skin">YouCam Skin Analysis</li>
+      <li data-step="tone">YouCam Skin Tone</li>
+      <li data-step="agent">Agent building your plan</li>
+      <li data-step="vto">YouCam Makeup Try-On</li>
+    </ol>
+    <p id="progressMsg" class="progress-msg"></p>
+  </section>
+
+  <!-- results -->
+  <section id="results" hidden>
+    <div class="grid-2">
+      <div class="card photo-card">
+        <div class="photo-wrap">
+          <img id="beforeImg" alt="Your selfie" />
+          <div class="score-ring" id="scoreRing"><svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="52" class="track"/><circle cx="60" cy="60" r="52" class="bar" id="ringBar"/></svg><div><b id="overall">–</b><span>skin score</span></div></div>
+        </div>
+        <div class="facts">
+          <div><span>Skin age</span><b id="skinAge">–</b></div>
+          <div><span>Skin tone</span><b><i id="toneSwatch" class="swatch"></i><span id="toneHex">–</span></b></div>
+          <div><span>Skin type</span><b id="skinType">–</b></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 id="headline">Your results</h2>
+        <p id="summary" class="summary"></p>
+        <div id="topConcerns" class="top-concerns"></div>
+        <details class="all-scores">
+          <summary>All 14 YouCam scores</summary>
+          <div id="bars" class="bars"></div>
+          <p class="fine">YouCam scores run 1–100; higher is healthier.</p>
+        </details>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="section-head">
+        <h2>Your routine</h2>
+        <div class="tabs" role="tablist">
+          <button class="tab active" data-tab="am" role="tab">☀ Morning</button>
+          <button class="tab" data-tab="pm" role="tab">☾ Evening</button>
+        </div>
+      </div>
+      <div id="routine" class="routine"></div>
+      <div class="routine-foot">
+        <ul id="tips" class="tips"></ul>
+        <div class="total-box">
+          <span>Full routine</span><b id="routineTotal">$0</b>
+          <button id="addRoutine" class="primary small" type="button">Add routine to bag</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card tryon">
+      <div class="section-head">
+        <h2>Try the look</h2>
+        <span class="muted" id="lookWhy"></span>
+      </div>
+      <div class="grid-2">
+        <div>
+          <div class="compare" id="compare">
+            <img id="cmpBefore" alt="Before" />
+            <div class="after-clip" id="afterClip"><img id="cmpAfter" alt="After virtual try-on" /></div>
+            <div class="handle" id="handle"><span>⟷</span></div>
+            <span class="tag l">Before</span><span class="tag r">After</span>
+            <input id="cmpRange" type="range" min="0" max="100" value="50" aria-label="Before/after slider" />
+            <div id="vtoLoading" class="vto-loading" hidden><div class="spinner"></div>Rendering with YouCam…</div>
+          </div>
+          <p id="vtoNote" class="fine"></p>
+        </div>
+        <div class="look-controls">
+          <h3>Look</h3>
+          <div class="chips" id="looks"></div>
+          <h3>Lip shade</h3>
+          <div class="swatches" id="lipSwatches"></div>
+          <h3>Blush</h3>
+          <div class="swatches" id="blushSwatches"></div>
+          <h3>Your foundation match</h3>
+          <div id="foundation" class="fnd"></div>
+          <button id="renderBtn" class="primary" type="button">Re-render try-on</button>
+          <div id="lookProducts" class="look-products"></div>
+          <button id="addLook" class="ghost" type="button">Add this look to bag</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Ask the agent to adjust</h2>
+      <div class="chips" id="refineChips">
+        <button class="chip" type="button">Keep it under $60</button>
+        <button class="chip" type="button">I'm pregnant — no retinoids</button>
+        <button class="chip" type="button">Fewer steps, I'm lazy at night</button>
+        <button class="chip" type="button">Make the look bolder for a party</button>
+      </div>
+      <form id="refineForm" class="refine">
+        <input id="refineInput" placeholder="e.g. swap the sunscreen for a tinted one" maxlength="300" />
+        <button class="primary small" type="submit">Update plan</button>
+      </form>
+      <details class="trace">
+        <summary>How the agent got here</summary>
+        <ol id="trace"></ol>
+      </details>
+    </div>
+
+    <p class="center"><button id="restart" class="link-btn" type="button">← Analyze another photo</button></p>
+  </section>
+</main>
+
+<aside id="bag" class="bag" aria-hidden="true">
+  <div class="bag-head"><h2>Your bag</h2><button id="bagClose" class="link-btn" type="button">Close ✕</button></div>
+  <div id="bagItems" class="bag-items"><p class="muted">Your bag is empty.</p></div>
+  <div class="bag-foot"><span>Subtotal</span><b id="bagTotal">$0.00</b></div>
+  <button id="checkout" class="primary" type="button">Checkout</button>
+  <p class="fine">Prototype store with demo products — checkout is simulated.</p>
+</aside>
+<div id="scrim" class="scrim" hidden></div>
+<div id="toast" class="toast" hidden></div>
+
+<footer class="foot">SkinSync · built on YouCam AI APIs (Skin Analysis, Skin Tone Analysis, Makeup Virtual Try-On) · Cosmetic guidance only, not a medical diagnosis.</footer>
+<script src="/static/app.js"></script>
+</body>
+</html>

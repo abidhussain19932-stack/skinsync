@@ -1,0 +1,1086 @@
+{
+ "currency": "USD",
+ "note": "Demo catalog of fictional brands for the hackathon prototype. Swap for a real merchant feed.",
+ "products": [
+  {
+   "id": "cl-01",
+   "name": "Gentle Amino Gel Cleanser",
+   "brand": "Dewlab",
+   "category": "cleanser",
+   "price": 12,
+   "concerns": [
+    "redness",
+    "moisture",
+    "acne"
+   ],
+   "key_ingredients": [
+    "amino-acid surfactants",
+    "panthenol"
+   ],
+   "skin_types": [
+    "oily",
+    "combination",
+    "normal",
+    "dry",
+    "sensitive"
+   ],
+   "fragrance_free": true,
+   "use": "AM/PM",
+   "description": "Low-pH, non-stripping daily cleanser."
+  },
+  {
+   "id": "cl-02",
+   "name": "Salicylic 2% Clarifying Foam",
+   "brand": "ClearCo",
+   "category": "cleanser",
+   "price": 14,
+   "concerns": [
+    "acne",
+    "pore",
+    "oiliness"
+   ],
+   "key_ingredients": [
+    "salicylic acid 2%",
+    "zinc PCA"
+   ],
+   "skin_types": [
+    "oily",
+    "combination"
+   ],
+   "fragrance_free": true,
+   "use": "PM",
+   "description": "Exfoliating foam that clears congested pores."
+  },
+  {
+   "id": "cl-03",
+   "name": "Cream-to-Milk Hydrating Cleanser",
+   "brand": "Hydraé",
+   "category": "cleanser",
+   "price": 15,
+   "concerns": [
+    "moisture",
+    "firmness",
+    "redness"
+   ],
+   "key_ingredients": [
+    "ceramides",
+    "glycerin"
+   ],
+   "skin_types": [
+    "dry",
+    "normal",
+    "sensitive"
+   ],
+   "fragrance_free": true,
+   "use": "AM/PM",
+   "description": "Cushiony milk cleanser for dry or tight skin."
+  },
+  {
+   "id": "tn-01",
+   "name": "Centella Calming Toner",
+   "brand": "Verda",
+   "category": "toner",
+   "price": 16,
+   "concerns": [
+    "redness",
+    "acne"
+   ],
+   "key_ingredients": [
+    "centella asiatica",
+    "madecassoside"
+   ],
+   "skin_types": [
+    "oily",
+    "combination",
+    "normal",
+    "dry",
+    "sensitive"
+   ],
+   "fragrance_free": true,
+   "use": "AM/PM",
+   "description": "Alcohol-free toner that soothes visible redness."
+  },
+  {
+   "id": "tn-02",
+   "name": "PHA Gentle Exfoliating Essence",
+   "brand": "Dewlab",
+   "category": "toner",
+   "price": 19,
+   "concerns": [
+    "texture",
+    "pore",
+    "radiance"
+   ],
+   "key_ingredients": [
+    "gluconolactone 5%",
+    "lactobionic acid"
+   ],
+   "skin_types": [
+    "oily",
+    "combination",
+    "normal",
+    "dry",
+    "sensitive"
+   ],
+   "fragrance_free": true,
+   "use": "PM",
+   "description": "Gentle leave-on exfoliant for smoother texture."
+  },
+  {
+   "id": "se-01",
+   "name": "Niacinamide 10% + Zinc Serum",
+   "brand": "ClearCo",
+   "category": "serum",
+   "price": 11,
+   "concerns": [
+    "pore",
+    "oiliness",
+    "acne",
+    "redness"
+   ],
+   "key_ingredients": [
+    "niacinamide 10%",
+    "zinc 1%"
+   ],
+   "skin_types": [
+    "oily",
+    "combination",
+    "normal"
+   ],
+   "fragrance_free": true,
+   "use": "AM/PM",
+   "description": "Refines pores and balances oil."
+  },
+  {
+   "id": "se-02",
+   "name": "Vitamin C 15% Brightening Serum",
+   "brand": "Lumora",
+   "category": "serum",
+   "price": 28,
+   "concerns": [
+    "radiance",
+    "age_spot",
+    "dark_circle_v2"
+   ],
+   "key_ingredients": [
+    "L-ascorbic acid 15%",
+    "vitamin E",
+    "ferulic acid"
+   ],
+   "skin_types": [
+    "normal",
+    "combination",
+    "oily",
+    "dry"
+   ],
+   "fragrance_free": true,
+   "use": "AM",
+   "description": "Antioxidant serum that brightens and fades spots."
+  },
+  {
+   "id": "se-03",
+   "name": "Hyaluronic + B5 Hydration Serum",
+   "brand": "Hydraé",
+   "category": "serum",
+   "price": 13,
+   "concerns": [
+    "moisture",
+    "wrinkle",
+    "firmness"
+   ],
+   "key_ingredients": [
+    "multi-weight hyaluronic acid",
+    "panthenol"
+   ],
+   "skin_types": [
+    "oily",
+    "combination",
+    "normal",
+    "dry",
+    "sensitive"
+   ],
+   "fragrance_free": true,
+   "use": "AM/PM",
+   "description": "Plumping humectant serum for thirsty skin."
+  },
+  {
+   "id": "se-04",
+   "name": "Azelaic Acid 10% Booster",
+   "brand": "Verda",
+   "category": "serum",
+   "price": 18,
+   "concerns": [
+    "redness",
+    "age_spot",
+    "acne",
+    "texture"
+   ],
+   "key_ingredients": [
+    "azelaic acid 10%"
+   ],
+   "skin_types": [
+    "oily",
+    "combination",
+    "normal",
+    "dry",
+    "sensitive"
+   ],
+   "fragrance_free": true,
+   "use": "PM",
+   "description": "Multi-tasker for redness, marks and breakouts."
+  },
+  {
+   "id": "se-05",
+   "name": "Tranexamic 3% Spot Corrector",
+   "brand": "Lumora",
+   "category": "serum",
+   "price": 24,
+   "concerns": [
+    "age_spot",
+    "radiance"
+   ],
+   "key_ingredients": [
+    "tranexamic acid 3%",
+    "niacinamide 4%"
+   ],
+   "skin_types": [
+    "oily",
+    "combination",
+    "normal",
+    "dry",
+    "sensitive"
+   ],
+   "fragrance_free": true,
+   "use": "AM/PM",
+   "description": "Targets stubborn dark spots and uneven tone."
+  },
+  {
+   "id": "se-06",
+   "name": "Peptide Firming Serum",
+   "brand": "Atelier 9",
+   "category": "serum",
+   "price": 32,
+   "concerns": [
+    "firmness",
+    "wrinkle",
+    "droopy_upper_eyelid",
+    "droopy_lower_eyelid"
+   ],
+   "key_ingredients": [
+    "matrixyl 3000",
+    "copper peptides"
+   ],
+   "skin_types": [
+    "oily",
+    "combination",
+    "normal",
+    "dry",
+    "sensitive"
+   ],
+   "fragrance_free": true,
+   "use": "AM/PM",
+   "description": "Peptide complex for bounce and fine lines."
+  },
+  {
+   "id": "tr-01",
+   "name": "Retinal 0.05% Night Renewal",
+   "brand": "Atelier 9",
+   "category": "treatment",
+   "price": 34,
+   "concerns": [
+    "wrinkle",
+    "texture",
+    "pore",
+    "acne",
+    "firmness"
+   ],
+   "key_ingredients": [
+    "retinaldehyde 0.05%",
+    "squalane"
+   ],
+   "skin_types": [
+    "normal",
+    "combination",
+    "oily",
+    "dry"
+   ],
+   "fragrance_free": true,
+   "use": "PM",
+   "description": "Next-gen retinoid; start 2-3 nights a week."
+  },
+  {
+   "id": "tr-02",
+   "name": "Bakuchiol Gentle Night Oil",
+   "brand": "Verda",
+   "category": "treatment",
+   "price": 22,
+   "concerns": [
+    "wrinkle",
+    "firmness",
+    "redness"
+   ],
+   "key_ingredients": [
+    "bakuchiol 1%",
+    "rosehip oil"
+   ],
+   "skin_types": [
+    "dry",
+    "normal",
+    "sensitive"
+   ],
+   "fragrance_free": true,
+   "use": "PM",
+   "description": "Retinol alternative for sensitive skin."
+  },
+  {
+   "id": "tr-03",
+   "name": "Hydrocolloid Blemish Patches",
+   "brand": "ClearCo",
+   "category": "treatment",
+   "price": 7,
+   "concerns": [
+    "acne"
+   ],
+   "key_ingredients": [
+    "hydrocolloid",
+    "tea tree"
+   ],
+   "skin_types": [
+    "oily",
+    "combination",
+    "normal",
+    "dry",
+    "sensitive"
+   ],
+   "fragrance_free": true,
+   "use": "PM",
+   "description": "Overnight patches that flatten active spots."
+  },
+  {
+   "id": "ey-01",
+   "name": "Caffeine 5% Depuffing Eye Gel",
+   "brand": "Lumora",
+   "category": "eye",
+   "price": 15,
+   "concerns": [
+    "eye_bag",
+    "dark_circle_v2",
+    "droopy_lower_eyelid"
+   ],
+   "key_ingredients": [
+    "caffeine 5%",
+    "EGCG"
+   ],
+   "skin_types": [
+    "oily",
+    "combination",
+    "normal",
+    "dry",
+    "sensitive"
+   ],
+   "fragrance_free": true,
+   "use": "AM/PM",
+   "description": "Cooling gel that reduces puffiness."
+  },
+  {
+   "id": "ey-02",
+   "name": "Peptide Eye Cream",
+   "brand": "Atelier 9",
+   "category": "eye",
+   "price": 26,
+   "concerns": [
+    "dark_circle_v2",
+    "wrinkle",
+    "droopy_upper_eyelid"
+   ],
+   "key_ingredients": [
+    "peptides",
+    "vitamin K",
+    "ceramides"
+   ],
+   "skin_types": [
+    "oily",
+    "combination",
+    "normal",
+    "dry",
+    "sensitive"
+   ],
+   "fragrance_free": true,
+   "use": "PM",
+   "description": "Rich eye cream for crepey under-eyes."
+  },
+  {
+   "id": "mo-01",
+   "name": "Oil-Free Gel Moisturizer",
+   "brand": "ClearCo",
+   "category": "moisturizer",
+   "price": 14,
+   "concerns": [
+    "oiliness",
+    "moisture",
+    "pore"
+   ],
+   "key_ingredients": [
+    "glycerin",
+    "niacinamide"
+   ],
+   "skin_types": [
+    "oily",
+    "combination"
+   ],
+   "fragrance_free": true,
+   "use": "AM/PM",
+   "description": "Weightless water-gel hydration."
+  },
+  {
+   "id": "mo-02",
+   "name": "Ceramide Barrier Cream",
+   "brand": "Hydraé",
+   "category": "moisturizer",
+   "price": 18,
+   "concerns": [
+    "moisture",
+    "redness",
+    "firmness",
+    "wrinkle"
+   ],
+   "key_ingredients": [
+    "ceramides NP/AP/EOP",
+    "cholesterol",
+    "squalane"
+   ],
+   "skin_types": [
+    "dry",
+    "normal",
+    "sensitive",
+    "combination"
+   ],
+   "fragrance_free": true,
+   "use": "AM/PM",
+   "description": "Barrier-repair cream, fragrance free."
+  },
+  {
+   "id": "mo-03",
+   "name": "Centella Recovery Cream",
+   "brand": "Verda",
+   "category": "moisturizer",
+   "price": 20,
+   "concerns": [
+    "redness",
+    "acne",
+    "moisture"
+   ],
+   "key_ingredients": [
+    "centella",
+    "panthenol 5%"
+   ],
+   "skin_types": [
+    "oily",
+    "combination",
+    "normal",
+    "dry",
+    "sensitive"
+   ],
+   "fragrance_free": true,
+   "use": "AM/PM",
+   "description": "Calms and repairs irritated skin."
+  },
+  {
+   "id": "sp-01",
+   "name": "Invisible Fluid SPF 50 PA++++",
+   "brand": "Lumora",
+   "category": "sunscreen",
+   "price": 17,
+   "concerns": [
+    "age_spot",
+    "radiance",
+    "wrinkle",
+    "redness"
+   ],
+   "key_ingredients": [
+    "UVA/UVB filters",
+    "niacinamide"
+   ],
+   "skin_types": [
+    "oily",
+    "combination",
+    "normal",
+    "dry",
+    "sensitive"
+   ],
+   "fragrance_free": true,
+   "use": "AM",
+   "description": "No white cast, matte-dewy finish."
+  },
+  {
+   "id": "sp-02",
+   "name": "Mineral Tinted SPF 40",
+   "brand": "Verda",
+   "category": "sunscreen",
+   "price": 21,
+   "concerns": [
+    "redness",
+    "age_spot"
+   ],
+   "key_ingredients": [
+    "zinc oxide",
+    "iron oxides"
+   ],
+   "skin_types": [
+    "sensitive",
+    "dry",
+    "normal"
+   ],
+   "fragrance_free": true,
+   "use": "AM",
+   "description": "Tinted mineral SPF that neutralises redness."
+  },
+  {
+   "id": "mk-01",
+   "name": "Kaolin Pore Detox Mask",
+   "brand": "ClearCo",
+   "category": "mask",
+   "price": 15,
+   "concerns": [
+    "pore",
+    "oiliness",
+    "texture"
+   ],
+   "key_ingredients": [
+    "kaolin",
+    "bentonite",
+    "BHA 0.5%"
+   ],
+   "skin_types": [
+    "oily",
+    "combination"
+   ],
+   "fragrance_free": true,
+   "use": "1-2x weekly",
+   "description": "Weekly clay mask for congested T-zones."
+  },
+  {
+   "id": "mk-02",
+   "name": "Overnight Hydra Sleeping Mask",
+   "brand": "Hydraé",
+   "category": "mask",
+   "price": 19,
+   "concerns": [
+    "moisture",
+    "radiance",
+    "firmness"
+   ],
+   "key_ingredients": [
+    "hyaluronic acid",
+    "ectoin"
+   ],
+   "skin_types": [
+    "oily",
+    "combination",
+    "normal",
+    "dry",
+    "sensitive"
+   ],
+   "fragrance_free": true,
+   "use": "1-2x weekly",
+   "description": "Wake up to plumper, glowy skin."
+  },
+  {
+   "id": "fd-01",
+   "name": "Skin Tint Serum Foundation — Porcelain 110",
+   "brand": "Lumora",
+   "category": "foundation",
+   "price": 26,
+   "concerns": [
+    "redness",
+    "age_spot",
+    "radiance"
+   ],
+   "key_ingredients": [
+    "niacinamide",
+    "hyaluronic acid",
+    "SPF 15"
+   ],
+   "skin_types": [
+    "oily",
+    "combination",
+    "normal",
+    "dry",
+    "sensitive"
+   ],
+   "fragrance_free": true,
+   "use": "AM",
+   "description": "Sheer-to-medium buildable skin tint.",
+   "shade_hex": "#F1D3C0",
+   "texture": "dewy"
+  },
+  {
+   "id": "fd-02",
+   "name": "Skin Tint Serum Foundation — Ivory 130",
+   "brand": "Lumora",
+   "category": "foundation",
+   "price": 26,
+   "concerns": [
+    "redness",
+    "age_spot",
+    "radiance"
+   ],
+   "key_ingredients": [
+    "niacinamide",
+    "hyaluronic acid",
+    "SPF 15"
+   ],
+   "skin_types": [
+    "oily",
+    "combination",
+    "normal",
+    "dry",
+    "sensitive"
+   ],
+   "fragrance_free": true,
+   "use": "AM",
+   "description": "Sheer-to-medium buildable skin tint.",
+   "shade_hex": "#E8C4A8",
+   "texture": "dewy"
+  },
+  {
+   "id": "fd-03",
+   "name": "Skin Tint Serum Foundation — Sand 220",
+   "brand": "Lumora",
+   "category": "foundation",
+   "price": 26,
+   "concerns": [
+    "redness",
+    "age_spot",
+    "radiance"
+   ],
+   "key_ingredients": [
+    "niacinamide",
+    "hyaluronic acid",
+    "SPF 15"
+   ],
+   "skin_types": [
+    "oily",
+    "combination",
+    "normal",
+    "dry",
+    "sensitive"
+   ],
+   "fragrance_free": true,
+   "use": "AM",
+   "description": "Sheer-to-medium buildable skin tint.",
+   "shade_hex": "#D9AE8C",
+   "texture": "dewy"
+  },
+  {
+   "id": "fd-04",
+   "name": "Skin Tint Serum Foundation — Honey 250",
+   "brand": "Lumora",
+   "category": "foundation",
+   "price": 26,
+   "concerns": [
+    "redness",
+    "age_spot",
+    "radiance"
+   ],
+   "key_ingredients": [
+    "niacinamide",
+    "hyaluronic acid",
+    "SPF 15"
+   ],
+   "skin_types": [
+    "oily",
+    "combination",
+    "normal",
+    "dry",
+    "sensitive"
+   ],
+   "fragrance_free": true,
+   "use": "AM",
+   "description": "Sheer-to-medium buildable skin tint.",
+   "shade_hex": "#C99A74",
+   "texture": "dewy"
+  },
+  {
+   "id": "fd-05",
+   "name": "Skin Tint Serum Foundation — Golden 310",
+   "brand": "Lumora",
+   "category": "foundation",
+   "price": 26,
+   "concerns": [
+    "redness",
+    "age_spot",
+    "radiance"
+   ],
+   "key_ingredients": [
+    "niacinamide",
+    "hyaluronic acid",
+    "SPF 15"
+   ],
+   "skin_types": [
+    "oily",
+    "combination",
+    "normal",
+    "dry",
+    "sensitive"
+   ],
+   "fragrance_free": true,
+   "use": "AM",
+   "description": "Sheer-to-medium buildable skin tint.",
+   "shade_hex": "#B9875F",
+   "texture": "dewy"
+  },
+  {
+   "id": "fd-06",
+   "name": "Skin Tint Serum Foundation — Caramel 340",
+   "brand": "Lumora",
+   "category": "foundation",
+   "price": 26,
+   "concerns": [
+    "redness",
+    "age_spot",
+    "radiance"
+   ],
+   "key_ingredients": [
+    "niacinamide",
+    "hyaluronic acid",
+    "SPF 15"
+   ],
+   "skin_types": [
+    "oily",
+    "combination",
+    "normal",
+    "dry",
+    "sensitive"
+   ],
+   "fragrance_free": true,
+   "use": "AM",
+   "description": "Sheer-to-medium buildable skin tint.",
+   "shade_hex": "#A6744F",
+   "texture": "dewy"
+  },
+  {
+   "id": "fd-07",
+   "name": "Skin Tint Serum Foundation — Toffee 410",
+   "brand": "Lumora",
+   "category": "foundation",
+   "price": 26,
+   "concerns": [
+    "redness",
+    "age_spot",
+    "radiance"
+   ],
+   "key_ingredients": [
+    "niacinamide",
+    "hyaluronic acid",
+    "SPF 15"
+   ],
+   "skin_types": [
+    "oily",
+    "combination",
+    "normal",
+    "dry",
+    "sensitive"
+   ],
+   "fragrance_free": true,
+   "use": "AM",
+   "description": "Sheer-to-medium buildable skin tint.",
+   "shade_hex": "#8E5F3E",
+   "texture": "dewy"
+  },
+  {
+   "id": "fd-08",
+   "name": "Skin Tint Serum Foundation — Mocha 450",
+   "brand": "Lumora",
+   "category": "foundation",
+   "price": 26,
+   "concerns": [
+    "redness",
+    "age_spot",
+    "radiance"
+   ],
+   "key_ingredients": [
+    "niacinamide",
+    "hyaluronic acid",
+    "SPF 15"
+   ],
+   "skin_types": [
+    "oily",
+    "combination",
+    "normal",
+    "dry",
+    "sensitive"
+   ],
+   "fragrance_free": true,
+   "use": "AM",
+   "description": "Sheer-to-medium buildable skin tint.",
+   "shade_hex": "#73492D",
+   "texture": "dewy"
+  },
+  {
+   "id": "fd-09",
+   "name": "Skin Tint Serum Foundation — Espresso 510",
+   "brand": "Lumora",
+   "category": "foundation",
+   "price": 26,
+   "concerns": [
+    "redness",
+    "age_spot",
+    "radiance"
+   ],
+   "key_ingredients": [
+    "niacinamide",
+    "hyaluronic acid",
+    "SPF 15"
+   ],
+   "skin_types": [
+    "oily",
+    "combination",
+    "normal",
+    "dry",
+    "sensitive"
+   ],
+   "fragrance_free": true,
+   "use": "AM",
+   "description": "Sheer-to-medium buildable skin tint.",
+   "shade_hex": "#5A3621",
+   "texture": "dewy"
+  },
+  {
+   "id": "lp-01",
+   "name": "Silk Lip Color — Rosewood Satin",
+   "brand": "Atelier 9",
+   "category": "lipstick",
+   "price": 19,
+   "concerns": [],
+   "key_ingredients": [
+    "shea butter",
+    "vitamin E"
+   ],
+   "skin_types": [
+    "oily",
+    "combination",
+    "normal",
+    "dry",
+    "sensitive"
+   ],
+   "fragrance_free": true,
+   "use": "makeup",
+   "description": "Satin finish lip color.",
+   "shade_hex": "#B5656B",
+   "texture": "satin"
+  },
+  {
+   "id": "lp-02",
+   "name": "Silk Lip Color — Nude Peach",
+   "brand": "Atelier 9",
+   "category": "lipstick",
+   "price": 19,
+   "concerns": [],
+   "key_ingredients": [
+    "shea butter",
+    "vitamin E"
+   ],
+   "skin_types": [
+    "oily",
+    "combination",
+    "normal",
+    "dry",
+    "sensitive"
+   ],
+   "fragrance_free": true,
+   "use": "makeup",
+   "description": "Satin finish lip color.",
+   "shade_hex": "#C98A7A",
+   "texture": "satin"
+  },
+  {
+   "id": "lp-03",
+   "name": "Silk Lip Color — Berry Velvet",
+   "brand": "Atelier 9",
+   "category": "lipstick",
+   "price": 19,
+   "concerns": [],
+   "key_ingredients": [
+    "shea butter",
+    "vitamin E"
+   ],
+   "skin_types": [
+    "oily",
+    "combination",
+    "normal",
+    "dry",
+    "sensitive"
+   ],
+   "fragrance_free": true,
+   "use": "makeup",
+   "description": "Matte finish lip color.",
+   "shade_hex": "#8E2F4F",
+   "texture": "matte"
+  },
+  {
+   "id": "lp-04",
+   "name": "Silk Lip Color — Classic Red",
+   "brand": "Atelier 9",
+   "category": "lipstick",
+   "price": 19,
+   "concerns": [],
+   "key_ingredients": [
+    "shea butter",
+    "vitamin E"
+   ],
+   "skin_types": [
+    "oily",
+    "combination",
+    "normal",
+    "dry",
+    "sensitive"
+   ],
+   "fragrance_free": true,
+   "use": "makeup",
+   "description": "Matte finish lip color.",
+   "shade_hex": "#B3202E",
+   "texture": "matte"
+  },
+  {
+   "id": "lp-05",
+   "name": "Silk Lip Color — Coral Gloss",
+   "brand": "Atelier 9",
+   "category": "lipstick",
+   "price": 19,
+   "concerns": [],
+   "key_ingredients": [
+    "shea butter",
+    "vitamin E"
+   ],
+   "skin_types": [
+    "oily",
+    "combination",
+    "normal",
+    "dry",
+    "sensitive"
+   ],
+   "fragrance_free": true,
+   "use": "makeup",
+   "description": "Gloss finish lip color.",
+   "shade_hex": "#E2725B",
+   "texture": "gloss"
+  },
+  {
+   "id": "lp-06",
+   "name": "Silk Lip Color — Mauve Balm",
+   "brand": "Atelier 9",
+   "category": "lipstick",
+   "price": 19,
+   "concerns": [],
+   "key_ingredients": [
+    "shea butter",
+    "vitamin E"
+   ],
+   "skin_types": [
+    "oily",
+    "combination",
+    "normal",
+    "dry",
+    "sensitive"
+   ],
+   "fragrance_free": true,
+   "use": "makeup",
+   "description": "Sheer finish lip color.",
+   "shade_hex": "#A86A7E",
+   "texture": "sheer"
+  },
+  {
+   "id": "bl-01",
+   "name": "Cloud Cream Blush — Peach Glow",
+   "brand": "Dewlab",
+   "category": "blush",
+   "price": 16,
+   "concerns": [],
+   "key_ingredients": [
+    "squalane"
+   ],
+   "skin_types": [
+    "oily",
+    "combination",
+    "normal",
+    "dry",
+    "sensitive"
+   ],
+   "fragrance_free": true,
+   "use": "makeup",
+   "description": "Blendable cream blush.",
+   "shade_hex": "#E8A08A",
+   "texture": "satin"
+  },
+  {
+   "id": "bl-02",
+   "name": "Cloud Cream Blush — Rose Petal",
+   "brand": "Dewlab",
+   "category": "blush",
+   "price": 16,
+   "concerns": [],
+   "key_ingredients": [
+    "squalane"
+   ],
+   "skin_types": [
+    "oily",
+    "combination",
+    "normal",
+    "dry",
+    "sensitive"
+   ],
+   "fragrance_free": true,
+   "use": "makeup",
+   "description": "Blendable cream blush.",
+   "shade_hex": "#D9848E",
+   "texture": "satin"
+  },
+  {
+   "id": "bl-03",
+   "name": "Cloud Cream Blush — Terracotta",
+   "brand": "Dewlab",
+   "category": "blush",
+   "price": 16,
+   "concerns": [],
+   "key_ingredients": [
+    "squalane"
+   ],
+   "skin_types": [
+    "oily",
+    "combination",
+    "normal",
+    "dry",
+    "sensitive"
+   ],
+   "fragrance_free": true,
+   "use": "makeup",
+   "description": "Blendable cream blush.",
+   "shade_hex": "#C56E5A",
+   "texture": "satin"
+  },
+  {
+   "id": "bl-04",
+   "name": "Cloud Cream Blush — Plum Flush",
+   "brand": "Dewlab",
+   "category": "blush",
+   "price": 16,
+   "concerns": [],
+   "key_ingredients": [
+    "squalane"
+   ],
+   "skin_types": [
+    "oily",
+    "combination",
+    "normal",
+    "dry",
+    "sensitive"
+   ],
+   "fragrance_free": true,
+   "use": "makeup",
+   "description": "Blendable cream blush.",
+   "shade_hex": "#A85A72",
+   "texture": "satin"
+  }
+ ]
+}
